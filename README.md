@@ -33,3 +33,25 @@ python task_manager.py delete 1
 ```
 
 Tasks are stored in `tasks.json` in the current directory.
+
+---
+
+## Meta Ad Creative Generator
+
+This script generates simple Meta ad creatives from a CSV file containing business details.
+
+### Usage
+
+Prepare a CSV file with the following headers:
+
+```
+business,product,description,audience,offer,cta
+```
+
+Run the generator:
+
+```bash
+python meta_ad_generator.py input.csv output.csv
+```
+
+The output CSV will contain all original columns plus a `creative` column with the generated ad text.
